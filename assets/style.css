@@ -1,1 +1,41 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./img/fond d'ecran.jpg");
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: rgb(104, 75, 8);
+  font-size: 25px;
+}
+
+main {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  width: 75%;
+}
+
+#inputTache {
+  padding: 5px;
+  border-radius: 25%;
+  margin: 10px;
+}
+
+.tacheList__tache {
+  list-style-type: none;
+}
+.tacheList__tache input {
+  text-decoration: none;
+}
+.tacheList__tache input:checked + span {
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
