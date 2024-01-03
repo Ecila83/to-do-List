@@ -13,7 +13,7 @@ function buttonAjoutTache() {
     const li = manipDom.getLi(newTache);
 
     listUl.append(li);
-    
+
 }
 
 function listActions(event) {
@@ -47,16 +47,14 @@ function init() {
     listUl.replaceChildren(...listLis);
 
     ajoutTache.addEventListener("click", buttonAjoutTache);
-    inputTache.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            buttonAjoutTache();
-        }
-    })
-    
+    // inputTache.addEventListener("keypress", function (event) {
+    //     if (event.key === "Enter") {
+    //         buttonAjoutTache();
+    //     }
+    // })
+
     listUl.addEventListener("click", listActions)
     buttondelete.addEventListener("click", buttonDeleteChecked)
-
-    
 }
 
 init()
