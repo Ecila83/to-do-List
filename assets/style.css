@@ -19,23 +19,47 @@ main {
   display: block;
   text-align: center;
   margin: auto;
-  background-color: white;
+  background-color: rgb(236, 228, 228);
   padding: 20px;
   width: 75%;
 }
 
 #inputTache {
   padding: 5px;
-  border-radius: 25%;
+  border-radius: 30%;
   margin: 10px;
 }
 
-.tacheList__tache {
+.tacheInput__button {
+  background-color: rgb(240, 214, 150);
+  padding: 3px;
+  border-radius: 25%;
+  border-color: rgb(104, 75, 8);
+  color: rgb(104, 75, 8);
+  font-weight: bold;
+}
+
+.tacheList {
   list-style-type: none;
+  text-align: left;
+  margin-left: 40%;
 }
-.tacheList__tache input {
-  text-decoration: none;
-}
-.tacheList__tache input:checked + span {
+.tacheList input:checked + span {
   text-decoration: line-through;
+}
+
+.tacheList__tache--buttonsupr {
+  font-size: 8px;
+  background-color: rgb(104, 75, 8);
+  color: rgb(240, 214, 150);
+  border-radius: 25%;
+  height: 13px;
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.deleteButton {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 25%;
 }/*# sourceMappingURL=style.css.map */

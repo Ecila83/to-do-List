@@ -1,3 +1,6 @@
+$color-prime: rgb(104, 75, 8);
+$color-sec: rgb(240, 214, 150);
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  color: rgb(104, 75, 8);
+  color: $color-prime;
   font-size: 25px;
 }
 
@@ -19,27 +22,50 @@ main {
   display: block;
   text-align: center;
   margin: auto;
-  background-color: white;
+  background-color: rgb(236, 228, 228);
   padding: 20px;
   width: 75%;
 }
 
 #inputTache {
   padding: 5px;
-  border-radius: 25%;
+  border-radius: 30%;
   margin: 10px;
 }
 
-.tacheList__tache {
+.tacheInput__button {
+  background-color: $color-sec;
+  padding: 3px;
+  border-radius: 25%;
+  border-color: $color-prime;
+  color: $color-prime;
+  font-weight: bold;
+}
+.tacheList{
   list-style-type: none;
-
-  input {
-    text-decoration: none;
-  }
+  text-align: left;
+  margin-left: 40%;
+  
 
   input:checked+span {
     text-decoration: line-through;
+    
   }
 
+ 
+}
+.tacheList__tache--buttonsupr{
+  font-size: 8px;
+  background-color: $color-prime;
+  color: $color-sec;
+  border-radius:25%;
+  height: 13px;
+  margin-left: 10px;
+  padding: 2px;
+}
+.deleteButton{
+  margin:10px;
+  padding: 5px;
+  border-radius: 25%;
 
 }
