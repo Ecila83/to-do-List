@@ -47,6 +47,10 @@ main {
 .tacheList input:checked + span {
   text-decoration: line-through;
 }
+.tacheList span {
+  font-size: large;
+  margin: 5px;
+}
 
 .tacheList__tache--buttonsupr {
   font-size: 8px;

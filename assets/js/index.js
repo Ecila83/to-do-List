@@ -17,7 +17,8 @@ function buttonAjoutTache() {
         const newTache = model.addTache(titletache);
         const li = manipDom.getLi(newTache);
         listUl.append(li);
-        inputTache.value = "Ajouter une tâche..."; 
+        inputTache.value = ""; 
+        inputTache.placeholder = "Ajouter une tâche...";
     }
     
 }
